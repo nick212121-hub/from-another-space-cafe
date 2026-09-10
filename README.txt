@@ -1,4 +1,4 @@
-# Από άλλο διάστημα — ιστότοπος XAMPP
+# Rockets Coffee Roasters — ιστότοπος XAMPP
 
 ## Τοποθέτηση φακέλου
 Αντιγράψτε τον φάκελο `from-another-space-cafe` στο:

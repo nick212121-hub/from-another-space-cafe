@@ -1,5 +1,5 @@
 /*
-  Από άλλο διάστημα — ρυθμίσεις ιστοτόπου
+  Rockets Coffee Roasters — ρυθμίσεις ιστοτόπου
   Επεξεργαστείτε μόνο αυτό το αντικείμενο για τα πραγματικά στοιχεία του καφέ.
 */
 const cafeConfig = {
@@ -9,7 +9,7 @@ const cafeConfig = {
   phoneHref: "+302610521888",
   instagram: "@rockets.coffeeroasters",
   instagramUrl: "https://www.instagram.com/rockets.coffeeroasters?stkn=MWd4MXA5eHAxcDNsMg%3D%3D&utm_source=qr",
-  facebook: "Από άλλο διάστημα",
+  facebook: "Rockets Coffee Roasters",
   facebookUrl: "https://www.facebook.com/share/1DfRjhBqK2/?mibextid=wwXIfr",
   hours: [
     ["Δευτέρα", "05:30–22:00"],

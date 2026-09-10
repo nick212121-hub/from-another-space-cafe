@@ -1,4 +1,4 @@
--- Καφέ Από άλλο διάστημα
+-- Rockets Coffee Roasters
 -- Σχήμα MySQL / MariaDB για XAMPP (phpMyAdmin)
 -- Αυτό το σχήμα είναι προαιρετικό για τον τρέχοντα στατικό ιστότοπο.
 -- Το HTML εμφανίζει απευθείας το μενού και τις ώρες και δεν απαιτεί PHP.
@@ -55,7 +55,7 @@ INSERT INTO cafe_settings
 (site_name, tagline, address, phone, instagram_url, facebook_url, maps_query)
 VALUES
 (
-  'Από άλλο διάστημα',
+  'Rockets Coffee Roasters',
   'Χειροποίητος καφές, φρέσκα αρτοσκευάσματα και γρήγορη εξυπηρέτηση σε πακέτο στην καρδιά της Πάτρας.',
   'Η ΔΙΕΥΘΥΝΣΗ ΣΑΣ, ΠΑΤΡΑ, ΕΛΛΑΔΑ',
   '+30 2610 000 000',
