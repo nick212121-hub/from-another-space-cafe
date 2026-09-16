@@ -74,6 +74,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   height: 100%;
   display: block;
   object-fit: contain;
+  border-radius: 50%;
 }
 .brand-name { font-size: 0.96rem; }
 
@@ -113,9 +114,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
   position: absolute;
   inset: 0;
   background:
-    url("assets/rockets.png")
-    center / cover no-repeat;
-  transform: scale(1.015);
+    url("../assets/background.jpg")
+  center / cover no-repeat;
+  transform: scale(1.05);
 }
 .hero-overlay {
   position: absolute;
@@ -224,13 +225,17 @@ h2 { font-size: clamp(3rem, 6vw, 5.2rem); }
 }
 
 .menu-section { background: var(--white); }
-.menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.menu-grid { columns: 3 280px; column-gap: 18px; }
 .menu-card {
   background: var(--soft);
   border-radius: var(--radius);
   padding: 28px 24px 20px;
+  display: inline-block;
+  width: 100%;
+  break-inside: avoid;
+  margin: 0 0 18px;
 }
-.menu-card:nth-child(2) { background: var(--cream); }
+.menu-card:nth-child(even) { background: var(--cream); }
 .menu-card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 22px; }
 .menu-card h3 { font-size: 1.45rem; letter-spacing: -0.03em; }
 .menu-number { color: var(--terra); font-size: .68rem; font-weight: 800; letter-spacing: .14em; }
@@ -256,7 +261,12 @@ h2 { font-size: clamp(3rem, 6vw, 5.2rem); }
   display: flex;
   flex-direction: column;
 }
-.location-block + .location-block { margin-top: 34px; }
+.location-block + .location-block {
+  margin-top: 34px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 .label {
   display: block;
   margin-bottom: 8px;
@@ -267,7 +277,7 @@ h2 { font-size: clamp(3rem, 6vw, 5.2rem); }
   font-weight: 800;
 }
 address { font-style: normal; font-weight: 700; max-width: 360px; }
-.hours-list { display: grid; gap: 7px; }
+.hours-list { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
 .hours-row { display: flex; justify-content: space-between; gap: 14px; font-size: .9rem; }
 .hours-row strong { font-weight: 700; }
 .parking-note {
@@ -343,7 +353,7 @@ address { font-style: normal; font-weight: 700; max-width: 360px; }
 @media (max-width: 900px) {
   .site-nav { gap: 18px; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 34px; }
-  .menu-grid { grid-template-columns: 1fr; }
+  .menu-grid { columns: 2 240px; }
   .visit-grid { grid-template-columns: 1fr; }
   .location-panel, .map-frame, .map-frame iframe { min-height: 430px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -374,6 +384,7 @@ address { font-style: normal; font-weight: 700; max-width: 360px; }
   .hero-content { padding-bottom: 78px; }
   .hero h1 { font-size: clamp(4rem, 20vw, 6.3rem); }
   .hero-note { display: none; }
+  .menu-grid { columns: 1; }
   .section { padding: 78px 0; }
   .section-heading { align-items: start; flex-direction: column; margin-bottom: 34px; }
   .section-heading h2 { font-size: 3rem; }
